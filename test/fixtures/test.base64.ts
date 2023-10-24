@@ -1,19 +1,19 @@
-import { KdfParams } from "../../lib/header.js"
+import {type KdfParams} from '../../lib/header.js';
 
 type Db = {
-  type: KdfParams['type']
-  file: string
-  seed: string
-  password: string
-  iterations: number
-  derivedKey: string
-}
+  type: KdfParams['type'];
+  file: string;
+  seed: string;
+  password: string;
+  iterations: number;
+  derivedKey: string;
+};
 
 export const db1: Db = {
   type: 'AES-KDF',
   file: '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',
   password: 'dummy',
-  iterations: 19047619,
+  iterations: 19_047_619,
   seed: 'ead850e8c70df4968e1963f39c5721fda70477e1596369b50a6e410f4dae552e',
   derivedKey: '0572e8261686083f8a330864658df696327d4cdc636cb5ad05eb62a7a27cfd80',
 };

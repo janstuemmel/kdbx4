@@ -13,9 +13,12 @@
     "clean": "rm -rf types",
     "test": "vitest",
     "build": "npm run clean && tsc -p tsconfig.build.json",
-    "lint": "eslint .",
+    "lint": "xo .",
     "type-check": "tsc"
   },
+  "xo": {
+		"space": true
+	},
   "keywords": [
     "keepass",
     "kdbx4",
@@ -25,9 +28,9 @@
   "devDependencies": {
     "@types/node": "^20.8.7",
     "@vitest/browser": "^0.34.6",
-    "eslint": "^8.52.0",
     "playwright": "^1.39.0",
     "typescript": "^5.2.2",
-    "vitest": "^0.34.6"
+    "vitest": "^0.34.6",
+    "xo": "^0.56.0"
   }
 }

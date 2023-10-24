@@ -1,4 +1,6 @@
-import { InlineConfig } from 'vitest';
+/* eslint-disable @typescript-eslint/consistent-type-assertions */
+/* eslint-disable import/no-anonymous-default-export */
+import {type InlineConfig} from 'vitest';
 
 export default {
   test: {
@@ -9,5 +11,5 @@ export default {
       enabled: true,
       headless: true,
     },
-  } as InlineConfig
+  } as InlineConfig,
 };
