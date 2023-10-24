@@ -1,7 +1,7 @@
 import { expect, it } from 'vitest';
 import { db1, db2 } from './fixtures/test.base64.js';
 import { base64ToBuffer } from './util.js';
-import { getHeader } from '../lib/header.js';
+import { type KdfParamsAesKdf, getHeader } from '../lib/header.js';
 import { computeAesKdf, generateCompositeKey } from '../lib/crypto.js';
 import { bufferToHex, hexToBuffer } from '../lib/util.js';
 
