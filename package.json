@@ -1,0 +1,34 @@
+{
+  "name": "kdbx4",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "A browser-only kdbx4 parser",
+  "exports": {
+    "*": "./lib/*"
+  },
+  "typesVersions": {
+    "*": {
+      "types.d.ts": ["types.d.ts"],
+      "*": ["dist/*"]
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "vitest",
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "type-check": "tsc"
+  },
+  "keywords": [
+    "keepass",
+    "kdbx4",
+    "kdbx"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "@vitest/browser": "^0.34.6",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6",
+    "webdriverio": "^8.20.0"
+  }
+}

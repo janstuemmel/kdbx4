@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should parse kdbx4 header 1`] = `
+{
+  "cipherId": "AES256-CBC",
+  "compressionFlag": "gzip",
+  "encryptionIv": ArrayBuffer [],
+  "kdfParams": {
+    "R": 19047619,
+    "S": ArrayBuffer [],
+    "type": "AES-KDF",
+  },
+  "masterSeed": ArrayBuffer [],
+  "signature1": 2594363651,
+  "signature2": 3041655655,
+  "size": 198,
+  "versionMajor": 4,
+  "versionMinor": 0,
+}
+`;
