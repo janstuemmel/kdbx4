@@ -3,7 +3,8 @@ import { InlineConfig } from 'vitest';
 export default {
   test: {
     browser: {
-      name: 'firefox',
+      provider: 'playwright',
+      name: 'chromium',
       enabled: true,
       headless: true,
     },

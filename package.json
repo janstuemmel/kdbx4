@@ -8,8 +8,12 @@
   },
   "typesVersions": {
     "*": {
-      "types.d.ts": ["types.d.ts"],
-      "*": ["dist/*"]
+      "types.d.ts": [
+        "types.d.ts"
+      ],
+      "*": [
+        "dist/*"
+      ]
     }
   },
   "scripts": {
@@ -27,8 +31,8 @@
   "devDependencies": {
     "@types/node": "^20.8.7",
     "@vitest/browser": "^0.34.6",
+    "playwright": "^1.39.0",
     "typescript": "^5.2.2",
-    "vitest": "^0.34.6",
-    "webdriverio": "^8.20.0"
+    "vitest": "^0.34.6"
   }
 }
