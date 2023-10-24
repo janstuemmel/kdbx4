@@ -13,6 +13,7 @@
     "clean": "rm -rf types",
     "test": "vitest",
     "build": "npm run clean && tsc -p tsconfig.build.json",
+    "lint": "eslint .",
     "type-check": "tsc"
   },
   "keywords": [
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@types/node": "^20.8.7",
     "@vitest/browser": "^0.34.6",
+    "eslint": "^8.52.0",
     "playwright": "^1.39.0",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
