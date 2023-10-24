@@ -15,6 +15,6 @@ jobs:
           node-version: 18
           cache: 'npm'
       - run: npm ci
-      - run: npx playwright install
+      - run: npx playwright install chromium
       - run: npm test
       - run: npm run type-check
