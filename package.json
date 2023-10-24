@@ -4,20 +4,13 @@
   "version": "0.1.0",
   "description": "A browser-only kdbx4 parser",
   "exports": {
-    "*": "./lib/*"
-  },
-  "typesVersions": {
-    "*": {
-      "types.d.ts": [
-        "types.d.ts"
-      ],
-      "*": [
-        "dist/*"
-      ]
+    "./*.js": {
+      "types": "./types/*.d.ts",
+      "default": "./lib/*.js"
     }
   },
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "rm -rf types",
     "test": "vitest",
     "build": "npm run clean && tsc -p tsconfig.build.json",
     "type-check": "tsc"
