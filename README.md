@@ -9,9 +9,7 @@ A browser-only kdbx4-only keepass fileformat parser/decryptor without dependecie
 ```js
 const file = /* ArrayBuffer */;
 const pw = new TextEncoder().encode('your-secret')
-
-const header = getHeader(file)
-const keys = await computeKeys(compositeKey, header)
+const db = Kdbx4.fromFile(file).unlock(pw);
 ```
 
 ## Reference
