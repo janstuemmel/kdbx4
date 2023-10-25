@@ -11,14 +11,14 @@
   },
   "scripts": {
     "clean": "rm -rf types *tgz",
-    "test": "vitest",
+    "test": "vitest --reporter=verbose",
     "build": "npm run clean && tsc -p tsconfig.build.json",
     "lint": "xo .",
     "type-check": "tsc"
   },
   "xo": {
-		"space": true
-	},
+    "space": true
+  },
   "keywords": [
     "keepass",
     "kdbx4",
@@ -27,10 +27,12 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.8.7",
-    "@vitest/browser": "^0.34.6",
-    "playwright": "^1.39.0",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6",
     "xo": "^0.56.0"
+  },
+  "volta": {
+    "node": "20.9.0",
+    "npm": "10.2.1"
   }
 }
