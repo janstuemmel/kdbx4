@@ -13,7 +13,7 @@
     "clean": "rm -rf types *tgz",
     "test": "vitest --reporter=verbose",
     "build": "npm run clean && tsc -p tsconfig.build.json",
-    "lint": "xo .",
+    "lint": "xo",
     "type-check": "tsc"
   },
   "xo": {
@@ -30,7 +30,6 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.8.7",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6",
     "xo": "^0.56.0"
