@@ -10,7 +10,7 @@
     }
   },
   "scripts": {
-    "clean": "rm -rf types",
+    "clean": "rm -rf types *tgz",
     "test": "vitest",
     "build": "npm run clean && tsc -p tsconfig.build.json",
     "lint": "xo .",
