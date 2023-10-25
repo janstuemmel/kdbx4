@@ -10,9 +10,8 @@ A browser-only kdbx4-only keepass fileformat parser/decryptor without dependecie
 const file = /* ArrayBuffer */;
 const pw = new TextEncoder().encode('your-secret')
 
-const { kdfParams: { R, S } } = getHeader(file)
-const compositeKey = await generateCompositeKey(file)
-const derivedKey = computeAesKdf(compositeKey, S, R)
+const header = getHeader(file)
+const keys = await computeKeys(compositeKey, header)
 ```
 
 ## Reference
