@@ -15,7 +15,7 @@ exports[`should parse kdbx4 header 1`] = `
   "masterSeed": ArrayBuffer [],
   "signature1": 2594363651,
   "signature2": 3041655655,
-  "size": 271,
+  "size": 207,
   "versionMajor": 4,
   "versionMinor": 0,
 }

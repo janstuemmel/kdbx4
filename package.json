@@ -19,6 +19,7 @@
   "xo": {
     "space": true,
     "rules": {
+      "unicorn/no-array-callback-reference": "off",
       "capitalized-comments": "off",
       "unicorn/prefer-code-point": "off"
     }

@@ -15,7 +15,7 @@ export const db1: Db = {
   password: 'dummy',
   iterations: 19_047_619,
   seed: 'ead850e8c70df4968e1963f39c5721fda70477e1596369b50a6e410f4dae552e',
-  derivedKey: '0572e8261686083f8a330864658df696327d4cdc636cb5ad05eb62a7a27cfd80',
+  derivedKey: 'fc93a04f5f2f898b8773250f05032d4f7f574eca1a3134210e5b1bb63645a664',
 };
 
 export const db2: Db = {
@@ -24,5 +24,5 @@ export const db2: Db = {
   password: 'dummy',
   iterations: 100,
   seed: 'ade1bdeefad024cf3c382c3b45f1adb584dc6e21562cc20dfd5a324faa3a1775',
-  derivedKey: '4880e55d5dbc3c9527c153d059419b029c1d17f3fe5a7f3196b7dabf26742122',
+  derivedKey: 'a2993cb3361ae66c850a787cfa59742b5d67f3f1ef03b88c505c8ffcbd434c6e',
 };
