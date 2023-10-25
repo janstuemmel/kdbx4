@@ -17,7 +17,11 @@
     "type-check": "tsc"
   },
   "xo": {
-    "space": true
+    "space": true,
+    "rules": {
+      "capitalized-comments": "off",
+      "unicorn/prefer-code-point": "off"
+    }
   },
   "keywords": [
     "keepass",
