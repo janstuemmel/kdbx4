@@ -5,6 +5,8 @@ exports[`should parse kdbx4 header 1`] = `
   "cipherId": "AES256-CBC",
   "compressionFlag": "gzip",
   "encryptionIv": ArrayBuffer [],
+  "headerHash": ArrayBuffer [],
+  "headerHmac": ArrayBuffer [],
   "kdfParams": {
     "R": 19047619,
     "S": ArrayBuffer [],
@@ -13,7 +15,7 @@ exports[`should parse kdbx4 header 1`] = `
   "masterSeed": ArrayBuffer [],
   "signature1": 2594363651,
   "signature2": 3041655655,
-  "size": 198,
+  "size": 271,
   "versionMajor": 4,
   "versionMinor": 0,
 }
